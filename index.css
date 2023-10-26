@@ -1,0 +1,222 @@
+@import url('https://fonts.cdnfonts.com/css/dela-gothic-one');
+
+:root {
+    --fulvous: #d1840fff;
+    --harvest-gold: #ebae13ff;
+    --paynes-gray: #5f6d88ff;
+    --isabelline: #fbf7f4ff;
+    --jet: #333333ff;
+} 
+
+body,header{
+    margin: 0;
+}
+
+a{
+    color: var(--jet);
+    text-decoration: none;
+}
+
+.itens{
+    display: flex;
+    gap: 32px;
+    margin-right: 32px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h4{
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+section {
+    padding: 16px;
+}
+
+nav {
+    background-color: var(--isabelline);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 48px;
+    width: 100%;
+}
+
+header {
+    margin-top: 48px;
+    background-image: url('./assets/Bem-vindo\ ao\ Hotel\ para\ caes\ CIAB.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+header button {
+    background-color: var(--fulvous);
+    padding: 10px 32px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+}
+
+#info{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 3rem ;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+#info img{
+    width: 300px;
+    height: 400px;
+}
+
+.agrupamento{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.mini-card{
+    background-color: #fffafa;
+    padding: 26px;
+    border-radius: 1px;
+}
+
+.min-card2{
+    background-color: var(--paynes-gray);
+    color: #ffffff;
+    padding: 26px;
+}
+
+footer {
+    margin-top: 32px;
+    background-color: var(--isabelline); 
+}
+
+.info-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 3rem ;   
+}
+
+#mapa {
+    width: 300px;
+    height: 200px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.card2{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.carrosel-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.carrosel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 32px;
+    padding: 0 32px;
+}
+
+.observacao {
+    font-size: 10px;
+}
+
+.contato h1{
+    text-align: center;
+}
+
+.card-carrosel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    min-width: 30%;
+    border: 1px solid var(--fulvous);
+}
+
+.button{
+    background-color: var(--paynes-gray);
+    padding: 10px 40px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
+}
+
+.custo{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.valor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fulvous);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fulvous);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap:32px;
+}
+
+.redes-sociais h2{
+    text-align: center;
+}
