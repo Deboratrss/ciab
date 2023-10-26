@@ -51,6 +51,10 @@ nav {
 }
 
 header {
+    display: block;
+}
+
+.home-container {
     margin-top: 48px;
     background-image: url('./assets/Bem-vindo\ ao\ Hotel\ para\ caes\ CIAB.png');
     background-position: 0 0;
@@ -79,6 +83,10 @@ header a{
     gap: 32px;
     grid-template-columns: 1fr 1fr;
     padding: 1rem 3rem ;
+}
+
+.autenticacao {
+    margin-top: 32px;
 }
 
 .card {
@@ -142,8 +150,7 @@ footer {
 }
 
 .card2{
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 48px;
 }
 
 .card3 {
@@ -151,7 +158,6 @@ footer {
     flex-direction: column;
     width: 100%;
     margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 .carrosel-container {
@@ -164,7 +170,7 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 32px;
-    padding: 0 32px;
+    padding: 32px;
 }
 
 .observacao {
@@ -176,10 +182,11 @@ footer {
 }
 
 .card-carrosel{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1fr 1fr;
     align-items: center;
+    text-align: center;
     padding: 32px;
     min-width: 30%;
     border: 1px solid var(--fulvous);
@@ -188,6 +195,7 @@ footer {
 .button{
     background-color: var(--paynes-gray);
     padding: 10px 40px;
+    margin: 0 auto;
     border-radius: 2px;
     font-size: 12px;
     color: #ffffff;
@@ -197,6 +205,7 @@ footer {
 .custo{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -251,14 +260,30 @@ footer {
     header{
         height: 70vh;
     }
+
+    .card-carrosel {
+        min-width: 50%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     #info{
         grid-template-columns: 1fr;
     }
-}
 
-@media screen and (max-width: 380px){
+    .card-carrosel {
+        padding: 16px;
+    }
+
+    .card-carrosel h2 {
+        font-size: 16px;
+    }
     
+    .card-carrosel p {
+        font-size: 14px;
+    }
+
+    .card-carrosel .observacao {
+        font-size: 8px;
+    }
 }
