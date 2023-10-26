@@ -63,7 +63,7 @@ header {
     margin-bottom: 32px;
 }
 
-header button {
+header a{
     background-color: var(--fulvous);
     padding: 10px 32px;
     border-radius: 2px;
@@ -76,6 +76,7 @@ header button {
     margin-top: 32px;
     margin-bottom: 32px;
     display: grid;
+    gap: 32px;
     grid-template-columns: 1fr 1fr;
     padding: 1rem 3rem ;
 }
@@ -115,7 +116,13 @@ footer {
 .info-contato {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem 3rem ;   
+    padding: 1rem 3rem ;
+    gap:32px;
+}
+
+.info-contato2 {
+    display: flex;
+    flex-direction: row;
 }
 
 #mapa {
@@ -219,4 +226,39 @@ footer {
 
 .redes-sociais h2{
     text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .info-contato{
+        grid-template-columns: 1fr;
+    }
+    header{
+        align-items: flex-end;
+        height: 85vh;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .agrupamento {
+        flex-direction: column;
+    }
+
+    .info-contato2{
+        flex-direction: column;
+    }
+
+    header{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #info{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 380px){
+    
 }

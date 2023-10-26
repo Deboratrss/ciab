@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O melhor centro de interação animal de brasília">
+    <meta name="keywords" content="pet, cachorro, adestramento, hospedagem">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/0b388454ae.js" crossorigin="anonymous"></script>
-    <title>Hospegaem CIAB</title>
+    <title>CIAB</title>
 </head>
 <body>
     <nav>
@@ -18,7 +20,7 @@
         </div>
     </nav>
     <header id="Home">
-        <button> Saiba Mais </button>
+        <a href="https://api.whatsapp.com/send?phone=5561995879832&text=Ol%C3%A1,%20estou%20interessado%20em%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20CIAB." referrerpolicy="no-referrer" target="_blank"> Saiba Mais </a>
     </header>
     <main>
         <article>
@@ -26,9 +28,7 @@
                 <img src="./assets/fotoCIAB.jpeg" alt="Foto da CIAB">
                 <div class="autenticacao">
                     <h1>Sobre o CIAB</h1>
-                    <p>O aplicativo de hotel para cachorro é a solução perfeita para os donos que desejam garantir o melhor conforto e cuidado para o seu pet durante suas ausências. Com um sistema intuitivo e prático, você poderá agendar a estadia do seu cão de forma segura e transparente. 
-                        Não se preocupe mais com a disponibilidade de hotéis, nosso aplicativo mostra em tempo real as vagas disponíveis no hotel escolhido para as datas desejadas.
-                    </p>
+                    <p>O CIAB (CENTRO DE INTERAÇÃO ANIMAL DE BRASÍLIA) é mais do que um simples hotel para cães,  é a escolha perfeita para os proprietários que desejam assegurar o máximo de conforto e cuidado para seus pets, mesmo quando não podem estar presentes. Nossa empresa também se destaca pela expertise em Comportamento Canino, Terapia Assistida, Bem-Estar Animal e Creche. Com um histórico de 5 anos de dedicação ao estudo e prática em comportamento animal, já ajudamos a educar com sucesso mais de 500 cães.</p>
                 </div>
             </section>
             <section id="info2">
@@ -113,10 +113,17 @@
     </main>
     <footer>
         <div class="info-contato">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.6489532299474!2d-48.08249992497847!3d-15.822453723646424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a336ba9fe91f7%3A0xea23be01f6b2b1d9!2sCIAB%20-%20Centro%20de%20Intera%C3%A7%C3%A3o%20Animal%20de%20Bras%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1698118127110!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.6489532299474!2d-48.08249992497847!3d-15.822453723646424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a336ba9fe91f7%3A0xea23be01f6b2b1d9!2sCIAB%20-%20Centro%20de%20Intera%C3%A7%C3%A3o%20Animal%20de%20Bras%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1698118127110!5m2!1spt-BR!2sbr"
+                width="700"
+                height="450"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
             <div class="contato">
                 <h1>Contato</h1>
-                <div class="info-contato">
+                <div class="info-contato2">
                     <div class="email-telefone-endereco">
                         <div class="telefone">
                             <h2>Telefone</h2>
@@ -149,5 +156,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        function setupStyles(windowWidth) {
+            if(windowWidth <= 800) {
+                const maps = document.getElementById('maps')
+                maps.setAttribute('width', windowWidth - 96)
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupStyles(window.innerWidth)
+        })
+
+        window.addEventListener('resize', (event) => {
+            setupStyles(event.target.innerWidth)
+        })
+        window
+    </script>
 </body>
 </html>
