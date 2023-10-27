@@ -268,7 +268,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     header{
-        height: 55vh;
+        height: 60vh;
     }
 
     #info{
