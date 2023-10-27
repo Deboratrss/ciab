@@ -267,6 +267,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    header{
+        height: 55vh;
+    }
+
     #info{
         grid-template-columns: 1fr;
     }
