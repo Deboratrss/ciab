@@ -99,8 +99,8 @@ header a{
 }
 
 .agrupamento{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
 }
 .mini-card{
@@ -240,7 +240,7 @@ footer {
     .info-contato{
         grid-template-columns: 1fr;
     }
-    header{
+    .home-container{
         align-items: flex-end;
         height: 85vh;
     }
@@ -249,15 +249,15 @@ footer {
 
 @media screen and (max-width: 800px) {
     .agrupamento {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .info-contato2{
         flex-direction: column;
     }
 
-    header{
-        height: 80vh;
+    .home-container {
+        height: 70vh;
     }
 
     .card-carrosel {
@@ -277,6 +277,7 @@ footer {
 
     .home-container {
         background-image: url('./assets/banner-mobile.png');
+        height: 80vh;
     }
 
     .card-carrosel {
