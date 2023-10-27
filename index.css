@@ -257,7 +257,7 @@ footer {
     }
 
     header{
-        height: 70vh;
+        height: 80vh;
     }
 
     .card-carrosel {
@@ -266,9 +266,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    header{
-        height: 65vh;
-    }
 
     #info{
         grid-template-columns: 1fr;
