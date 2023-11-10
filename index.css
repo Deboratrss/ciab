@@ -103,16 +103,14 @@ header a{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
 }
-.mini-card{
-    background-color: #fffafa;
-    padding: 26px;
-    border-radius: 1px;
+
+#servicos-mobile {
+    width: 100%;
+    display: none;
 }
 
-.min-card2{
-    background-color: var(--paynes-gray);
-    color: #ffffff;
-    padding: 26px;
+#servicos{
+    width: 100%;
 }
 
 footer {
@@ -148,9 +146,6 @@ footer {
     gap: 8px;
 }
 
-.card2{
-    margin-top: 48px;
-}
 
 .card3 {
     display: flex;
@@ -263,6 +258,7 @@ footer {
     .card-carrosel {
         min-width: 70%;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -294,5 +290,14 @@ footer {
 
     .card-carrosel .observacao {
         font-size: 8px;
+    }
+
+
+    #servicos-mobile {
+        display: block;
+    }
+    
+    #servicos{
+        display: none;
     }
 }
